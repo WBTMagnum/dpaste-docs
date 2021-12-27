@@ -1,0 +1,71 @@
+site_name: Dpaste Documentation
+site_author: DarrenOfficial
+site_url: https://docs.dpaste.org
+site_description: >-
+  dpaste is a pastebin application written in Python using the Django framework.
+  You can find a live installation on dpaste.org.
+repo_url: 'https://github.com/bartTC/dpaste'
+edit_uri: 'https://github.com/DarrenOfficial/dpaste-docs/edit/main/docs'
+theme:
+  include_search_page: false
+  search_index_only: true
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: red
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: cyan
+      accent: red
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+  font:
+    text: 'Ubuntu'
+    code: 'Source Code Pro'
+  features:
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - tabs
+    - instantsite
+    - navigation.tracking
+    - navigation.expand
+    # - header.autohide
+    - content.code.annotate
+    - navigation.indexes
+    - navigation.instant
+    # - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.keys
+  - attr_list
+  - pymdownx.betterem:
+      smart_enable: all
+nav:
+  - Home: index.md
+  - Installations: installation.md
+  - Testing: testing.md
+  - Management Commands: management_commands.md
+  - Settings: settings.md
+  - API: api.md
+extra:
+  social:
+    - icon: 'fontawesome/brands/twitter'
+      link: 'https://twitter.com/darrenuselinux'
+    - icon: 'fontawesome/brands/github-alt'
+      link: 'https://github.com/darrenofficial' 
+    - icon: 'fontawesome/brands/discourse'
+      link: 'https://forum.darrennathanael.com'
+  generator: true
+copyright: '&copy; 2013-2021, Martin Mahner; &copy; 2022, Darren Nathanael'
