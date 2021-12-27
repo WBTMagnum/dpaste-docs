@@ -12,7 +12,7 @@ dpaste is a [pastebin](https://en.wikipedia.org/wiki/Pastebin) application writt
 
 The project is intended to run standalone as any regular Django Project, but it's also possible to install it into an existing project as a typical Django application.
 
-![svg mockups](https://cdn.darrennathanael.com/assets/dpaste/dpaste.svg)
+![svg mockups](https://cdn.darrennathanael.com/assets/dpaste/dpaste.png)
 
 The code is open source and available on Github: [https://github.com/bartTC/dpaste](https://github.com/bartTC/dpaste). If you found bugs, have problems or ideas with the project or the website installation, please create an *Issue* there.
 
