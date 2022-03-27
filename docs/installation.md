@@ -3,11 +3,11 @@ There are various ways to install and deploy dpaste. See the guides below:
 
 ## dpaste with Docker
 ---
-dpaste Docker images are available to pull from the [Docker Hub.](https://hub.docker.com/r/barttc/dpaste)
+dpaste Docker images are available to pull from the [Docker Hub.](https://hub.docker.com/r/DarrenOfficial/dpaste)
 
 Quickstart to run a dpaste container image:
 ```bash
-$ docker run --rm -p 8000:8000 barttc/dpaste:latest
+$ docker run --rm -p 8000:8000 DarrenOfficial/dpaste:latest
 ```
 
 The dpaste image serves the project using uWSGi and is ready for production-like environments. However it’s encouraged to use an external database to store the data. See the example below for all available options, specifically `DATABASE_URL`:
@@ -19,7 +19,7 @@ $ docker run --rm -p 12345:12345 \
       -e DEBUG=True \
       -e SECRET_KEY=super-secure-key \
       -e PORT=12345 \
-      barttc/dpaste:latest
+      DarrenOfficial/dpaste:latest
 ```
 
 ## Integration into an existing Django project
