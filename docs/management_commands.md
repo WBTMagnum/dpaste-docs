@@ -23,7 +23,7 @@ $ pipenv run ./managepy cleanup_snippets
 A crontab line might look like:
 
 ```c
-1 20 * * * /srv/dpaste.de/pipenv run manage.py cleanup_snippets > /dev/null
+1 20 * * * /srv/dpaste.org/pipenv run manage.py cleanup_snippets > /dev/null
 ```
 
 !!! note "Note"
