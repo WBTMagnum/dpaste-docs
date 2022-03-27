@@ -11,10 +11,10 @@ Create a new Snippet on this dpaste installation. It returns the full URL that s
 **Example request:**
 
 ```bash
-$ curl -X POST -F "format=url" -F "content=ABC" https:/dpaste.de/api/
+$ curl -X POST -F "format=url" -F "content=ABC" https:/dpaste.org/api/
 
 Host: dpaste.de
-User-Agent: curl/7.54.0
+User-Agent: curl/7.82.0
 Accept: */*
 ```
 
@@ -23,7 +23,7 @@ Accept: */*
 ```bash
 {
   "lexer": "python",
-  "url": "https://dpaste.de/EBKU",
+  "url": "https://dpaste.org/EBKU",
   "content": "ABC"
 }
 ```
@@ -34,12 +34,12 @@ Accept: */*
 - **lexer** – (optional) The lexer string key used for highlighting. See the `CODE_FORMATTER` property in [Settings](https://docs.dpaste.org/settings/) for a full list of choices. Default: `_code`.
 - **format** -
 (optional) The format of the API response. Choices are:
-    - `default` — Returns a full qualified URL wrapped in quotes. Example: `"https://dpaste.de/xsWd"`
-    - `url` — Returns the full qualified URL to the snippet, without surrounding quotes, but with a line break. Example: `https://dpaste.de/xsWd\n`
+    - `default` — Returns a full qualified URL wrapped in quotes. Example: `"https://dpaste.org/xsWd"`
+    - `url` — Returns the full qualified URL to the snippet, without surrounding quotes, but with a line break. Example: `https://dpaste.org/xsWd\n`
     - `json` — Returns a JSON object containing the URL, lexer and content of the the snippet. Example:
 
             {
-            "url": "https://dpaste.de/xsWd",
+            "url": "https://dpaste.org/xsWd",
             "lexer": "python",
             "content": "The text body of the snippet."
             }
@@ -75,6 +75,11 @@ Accept: */*
 ### Status Codes
 - [**200 OK**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200) – No Error.
 - [**400 Bad Request**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400) – One of the above form options was invalid, the response will contain a meaningful error message.
+
+
+!!! info "Info"
+
+        If you have a standalone installation and your API returns `https://dpaste-base-url.example.org` as the domain, you need to adjust the setting `get_base_url` property. See Settings.
 
 ## Third party API integration
 **subdpaste**
