@@ -5,7 +5,9 @@ site_description: >-
   dpaste is a pastebin application written in Python using the Django framework.
   You can find a live installation on dpaste.org.
 repo_url: 'https://github.com/DarrenOfficial/dpaste'
+repo_name: 'dpaste'
 edit_uri: 'https://github.com/DarrenOfficial/dpaste-docs/edit/main/docs'
+logo: 'https://darrennathanael.com/favicon.png'
 theme:
   palette: 
     - scheme: slate 
@@ -73,5 +75,5 @@ extra:
       link: 'https://hub.docker.com/r/darrenofficial/dpaste'
   generator: true
 copyright: >-
-  &copy; 2009 BartTC
+  &copy; 2013 BartTC
   &copy; 2022 Darren Nathanael
