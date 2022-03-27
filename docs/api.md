@@ -13,7 +13,7 @@ Create a new Snippet on this dpaste installation. It returns the full URL that s
 ```bash
 $ curl -X POST -F "format=url" -F "content=ABC" https:/dpaste.org/api/
 
-Host: dpaste.de
+Host: dpaste.org
 User-Agent: curl/7.82.0
 Accept: */*
 ```
