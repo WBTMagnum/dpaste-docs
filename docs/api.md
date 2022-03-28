@@ -98,6 +98,10 @@ Accept: */*
 
 -  an iPython extension: [https://pypi.org/project/dpaste-magic/](https://pypi.org/project/dpaste-magic/)
 
+**omf-dpaste**
+
+-  an Oh-My-Fish plugin: [https://github.com/oh-my-fish/plugin-dpaste](https://github.com/oh-my-fish/plugin-dpaste)
+
 You can also paste your file content to the API via curl, directly from the command line:
 
 
