@@ -12,10 +12,9 @@ $ docker run --rm -p 8000:8000 DarrenOfficial/dpaste:latest
 
 The dpaste image serves the project using uWSGi and is ready for production-like environments. However it’s encouraged to use an external database to store the data. See the example below for all available options, specifically `DATABASE_URL`:
 ```bash
-$ docker run --rm --name db1 --detach postgres:latest
 $ docker run --rm -p 12345:12345 \
       --link db1 \
-      -e DATABASE_URL=postgres://postgres@db1:5432/postgres \
+      -e DATABASE_URL=postgres://dpaste:supersecureposgrespassword@127.0.0.1:5432/postgres \
       -e DEBUG=True \
       -e SECRET_KEY=super-secure-key \
       -e PORT=12345 \
