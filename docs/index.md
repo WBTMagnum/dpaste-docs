@@ -15,6 +15,6 @@ The project is intended to run standalone as any regular Django Project, but it'
 
 ![svg mockups](https://cdn.darrennathanael.com/assets/dpaste/dpaste.png)
 
-The code is open source and available on Github: [https://github.com/bartTC/dpaste](https://github.com/bartTC/dpaste). If you found bugs, have problems or ideas with the project or the website installation, please create an *Issue* there.
+The code is open source and available on Github: [https://github.com/DarrenOfficial/dpaste](https://github.com/DarrenOfficial/dpaste). If you found bugs, have problems or ideas with the project or the website installation, please create an *Issue* there.
 
 ⚠️ dpaste requires at a minimum Python 3.6 and Django 2.2.
