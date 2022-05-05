@@ -7,7 +7,7 @@ dpaste Docker images are available to pull from the [Docker Hub.](https://hub.do
 
 Quickstart to run a dpaste container image:
 ```bash
-$ docker run --rm -p 8000:8000 DarrenOfficial/dpaste:latest
+$ docker run --rm -p 8000:8000 darrenofficial/dpaste:latest
 ```
 
 The dpaste image serves the project using uWSGi and is ready for production-like environments. However it’s encouraged to use an external database to store the data. See the example below for all available options, specifically `DATABASE_URL`:
@@ -18,7 +18,7 @@ $ docker run --rm -p 12345:12345 \
       -e DEBUG=True \
       -e SECRET_KEY=super-secure-key \
       -e PORT=12345 \
-      DarrenOfficial/dpaste:latest
+      darrenofficial/dpaste:latest
 ```
 
 ## Integration into an existing Django project
