@@ -1,9 +1,19 @@
 Changelog
 =========
 
-3.7 (master)
+3.8 (master)
 ------------
 TBD
+
+
+3.7 (2022-06-03)
+------------
+
+- lower pygments version to <=2.11.2 due to a major bug. see [#208](https://github.com/DarrenOfficial/dpaste/issues/208)
+- add the posibility of specifying a url prefix. see [#143](https://github.com/DarrenOfficial/dpaste/pull/143)
+- update sass to v1.51
+- update nodejs to v12.22.11
+- Update django-webserver to v1.2.0
 
 
 3.6 (2022-03-27)
