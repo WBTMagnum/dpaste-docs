@@ -3,7 +3,7 @@ There are various ways to install and deploy dpaste. See the guides below:
 
 ## dpaste with Docker
 ---
-dpaste Docker images are available to pull from the [Docker Hub.](https://hub.docker.com/r/DarrenOfficial/dpaste)
+dpaste Docker images are available to pull from the [Docker Hub.](https://hub.docker.com/r/darrenofficial/dpaste)
 
 Quickstart to run a dpaste container image:
 ```bash
